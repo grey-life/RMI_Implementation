@@ -1,7 +1,6 @@
 import Pyro4
 
 @Pyro4.expose
-
 class GreetingMaker(object):
     def get_fortunate(self, name):
         greeting = 'Hello, '+name + "."
