@@ -2,7 +2,7 @@ import Pyro4
 
 @Pyro4.expose
 
-class GreetingMaker(Object):
+class GreetingMaker(object):
     def get_fortunate(self, name):
         greeting = 'Hello, '+name + "."
         fortune_message = '\nSomeone is looking upto you. Don\'t let that person down'
